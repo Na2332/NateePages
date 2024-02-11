@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.header {
+    text-align: center;
+    background-color: rgba(255, 190, 94, 1);
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: flex;
+}
+
+.flex-menu-section {
+    display: flex;
+    float: left;
+    background-color: rgba(146, 146, 146, 1);
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#button {
+    background-color: rgba(230, 55, 0, 1);
+    border: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#button:hover {
+    background-color: rgba(230, 55, 0, 10);
+}
+
+.content {
+    text-align: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: rgba(255, 190, 94, 1);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+a, a:link, a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .container {font-size: 25px;}
+    .container p {font-size: 30px;}
+    .footer {font-size: 30px;}
+}
